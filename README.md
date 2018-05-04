@@ -2,7 +2,7 @@
 Django code for data driving Questionnaire web site that providing users with different questionnaire.  Admin can dynamically change each questionnaire's question and the number of questions.
 
 ## Environment: 
-    <li> virtualenv </li>
+    - virtualenv
     
 ## Required Software:
     <li>python 2.7</li>
@@ -13,10 +13,10 @@ Django code for data driving Questionnaire web site that providing users with di
     <li>Jquery  3.3.1</li>
 
 ## Instructions to run locally:
-    ### if has django 1.11.8  
+    ###### if has django 1.11.8  
     <li>Navigate to src folder by cd src</li>
     <li>Run local server by python manage.py runserver</li>
-    ### if want to use Virtual envirenment
+    ###### if want to use Virtual envirenment
     <li>install virtualenv by pip install virtualenv</li>
     <li>virtualenv questionnaire_dataDriving</li>
     <li>cd questionnaire_dataDriving</li>
