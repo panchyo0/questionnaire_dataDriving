@@ -27,7 +27,7 @@ Django code for data driving Questionnaire web site that providing users with di
     
 ## Instruction to use questionnaire:
    - Make sure local server is running at http://127.0.0.1:8000/.
-   - Staring with admin page at http://127.0.0.1:8000/admin/  with super user (username: admin, password:1234abcd).
+   - Login with admin page at http://127.0.0.1:8000/admin/  with super user (username: admin, password:1234abcd).
    - Add a new questionnaire by click add button in Questionnaires.
    - Add new questions  by click add button in Questions.
    - Add questions to questionnaire by click add button in Questionnaire_ questions.
