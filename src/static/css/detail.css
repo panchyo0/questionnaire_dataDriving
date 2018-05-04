@@ -1,0 +1,55 @@
+.bg {
+  background-image:none;
+}
+.inner{
+    background: rgba(0,0,0,0);
+}
+
+/*nav*/
+.navbar-default{
+  background: rgba(16, 16, 15, 0.8);
+}
+
+.navbar-default .navbar-nav .nav-a{
+  color:#8c9197;;
+}
+/*end nav*/
+
+/*body*/
+#title{
+  text-align: center;
+}
+#draf{
+  color: red;
+  font-size: 18px;
+  text-align: center;
+}
+#date{
+  text-align: center;
+}
+label{
+  display: none;
+}
+
+.form-control{
+  width: 100%;
+  height: auto;
+}
+
+#sub_form{
+  margin-bottom: 30px;
+}
+/*end body*/
+/*footer*/
+.footer{
+  color:black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:20px;
+  background-color:white;
+  position: fixed;
+  text-align:center;
+
+}
+/*end footer*/

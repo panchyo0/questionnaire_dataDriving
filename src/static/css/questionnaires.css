@@ -1,0 +1,19 @@
+/*body*/
+.intro-text{
+  color: white;
+}
+
+.intro-title{
+  font-size: 18px;
+}
+
+.list{
+  margin-left: 20px;
+}
+
+#info{
+  text-align: center;
+  color:rgba(255, 0, 0, 0.56);
+  margin-top: 15%;
+}
+/*end body*/

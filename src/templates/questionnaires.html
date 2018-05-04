@@ -1,0 +1,66 @@
+{%extends 'base.html' %}
+{% load tz %}
+
+{% load static %}
+
+{%block pagetitle%}{{title}}
+  {{block.super}}
+{%endblock pagetitle%}
+
+{%block css%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/questionnaires.css' %}">
+{%endblock css%}
+
+{%block body%}
+<div class="container list">
+  <div class="row">
+    {%for obj in objects_list%}
+      <div class="col-lg-8">
+          <a href="{%url "questionnaires:detail" pk=obj.Id %}"><p class="intro-title" id="title">{{obj.name}}</p></a>
+          <p id="date">{{obj.start_date|localtime|date:'M d, Y'}}</p>
+          <p id="content">{{obj.description|truncatechars:140}}</p>
+          <hr style="border-top: 2px solid #00000080;">
+      </div>
+      {%endfor%}
+    </div>
+</div>
+
+<!-- start pagination -->
+{%if objects_list %}
+<nav aria-label="..." class="pagenav bottom" style="text-align: center;">
+  <div class="pagination">
+      {% if objects_list.has_previous %}
+        <li class="page-item"><a href="?page=1">&laquo; first</a></li>
+        <li class="page-item disabled">
+          <a class="page-link" href="?page={{ objects_list.previous_page_number }}">previous</a>
+        </li>
+        <li class="page-item">
+            <a href="?page={{ objects_list.previous_page_number }}">{{ objects_list.previous_page_number }}</a>
+        </li>
+      {% endif %}
+
+      <li class="page-item active">
+        <a class="page-link" href="#">{{ objects_list.number }} <span class="sr-only">(current)</span></a>
+      </li>
+
+      {% if objects_list.has_next %}
+      <li class="page-item">
+          <a href="?page={{ objects_list.next_page_number }}">{{ objects_list.next_page_number }}</a>
+      </li>
+      <li class="page-item">
+          <a href="?page={{ objects_list.next_page_number }}">next</a>
+       </li>
+       <li class="page-item">
+          <a href="?page={{ objects_list.paginator.num_pages }}">last &raquo;</a>
+        </li>
+      {% endif %}
+  </div>
+</nav>
+{%else%}
+  <h2 id="info">Questionnaire not exist.Please add questionnaire.</h2>
+{%endif%}
+<!-- end pagination -->
+{%endblock body%}
+
+{%block js%}
+{%endblock js%}

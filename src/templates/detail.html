@@ -1,0 +1,37 @@
+{%extends 'base.html' %}
+{% load tz %}
+
+{% load static %}
+
+{%block pagetitle%}
+  {{title}}{{block.super}}|{{objects.Id}}
+{%endblock pagetitle%}
+
+{%block css%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+{%endblock css%}
+
+{%block body%}
+<div class="container">
+  <h2 id="title">{{objects.name}}</h2>
+  {%if not objects.is_open%}
+  <p id="draf">Draft</p>
+  {%endif%}
+  <p id="date">Update at {{objects.start_date|localtime|date:'M d, Y'}}</p>
+  <p class=" ">{{objects.description}}</p>
+
+  <form method="post" action="" id="formsubmit"> {%csrf_token%}
+    {{ formset.management_form }}
+      {% for row in rows %}
+        <p>{{ forloop.counter }}.{{row.0}}</p>
+        <p>{{row.1}}</p>
+      {% endfor %}
+    <p type="" id="sub_form" class="btn btn-default">Submit</p>
+  </form>
+
+</div>
+{%endblock body%}
+
+{%block js%}
+<script src="{% static 'js/detail.js' %}"></script>
+{%endblock js%}

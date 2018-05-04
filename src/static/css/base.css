@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(/static/image/mountain-1500x1000.jpg);
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inner{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top:0;
+}
+
+/*navbar css*/
+.navbar{
+  border-radius: 0px;
+}
+.navbar-default{
+  background: none;
+  border: none;
+  padding-top: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  box-shadow: none;
+  /*position: fixed;*/
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.navbar-scroll{
+  position: fixed;
+  background: black;
+}
+.navbar-default .navbar-toggle {
+    border-color: #dddddd1c;
+}
+.navbar-default .navbar-collapse{
+  border-color: rgba(255, 255, 255, 0);
+}
+#bs-example-navbar-collapse-1.navbar-collapse.collapse.in {
+    border-color: #e7e7e700;
+    box-shadow: none;
+}
+#bs-example-navbar-collapse-1.navbar-collapse.collapse{
+  border-top: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-brand{
+  color: #fff;
+  font-size: 20px;
+  text-shadow:none;
+}
+.navbar-default .navbar-nav .nav-a{
+  color:#404245;
+  text-shadow:none;
+}
+.navbar-default .navbar-nav .nav-a:hover{
+  color:white;
+  font-size: 18px;
+}
+.nav-side-btn{
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 249, 255, 0);
+}
+.side-btn .nav-side-btn:hover{
+  padding-left: 10px;
+}
+
+.nav-side-btn-img{
+  width: 15px;
+  height: 15px;
+  margin-left: 3%;
+}
+/*end nav*/
+
+/*footer*/
+.footer{
+left: 0;
+bottom: 0;
+width: 100%;
+position: absolute;
+color:  rgba(255, 255, 255, 0.2);
+text-align:center;
+}
+/*end footer*/
