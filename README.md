@@ -17,7 +17,7 @@ Django code for data driving Questionnaire web site that providing users with di
    - Navigate to src folder by cd src
    - Run local server by python manage.py runserver
    ###### If want to use Virtual envirenment
-   - install virtualenv by pip install virtualenv
+   - Install virtualenv by pip install virtualenv
    - virtualenv questionnaire_dataDriving
    - cd questionnaire_dataDriving
    - Under questionnaire_dataDriving folder, active virtual environment by source bin activate
