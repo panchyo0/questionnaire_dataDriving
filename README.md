@@ -13,10 +13,10 @@ Django code for data driving Questionnaire web site that providing users with di
    - Jquery  3.3.1
 
 ## Instructions to run locally:
-   ###### if has django 1.11.8  
+   ###### If has django 1.11.8  
    - Navigate to src folder by cd src
    - Run local server by python manage.py runserver
-   ###### if want to use Virtual envirenment
+   ###### If want to use Virtual envirenment
    - install virtualenv by pip install virtualenv
    - virtualenv questionnaire_dataDriving
    - cd questionnaire_dataDriving
