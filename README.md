@@ -12,6 +12,10 @@ Django code for data driving Questionnaire web site that providing users with di
    - Twitter Bootstrap 3
    - Jquery  3.3.1
 
+## Test:
+  - Test by django default test. 
+  - Running test case by python manage.py test 
+
 ## Instructions to run locally:
    ###### If has django 1.11.8  
    - Navigate to src folder by cd src
